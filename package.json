@@ -1,11 +1,7 @@
 {
-  "name": "angularify",
+  "name": "angular-browserify-seed",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Seed project for using Angular with Browserify",
   "author": "Ben Hanna <benpaulhanna@gmail.com>",
   "license": "MIT",
   "devDependencies": {
