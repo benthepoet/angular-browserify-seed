@@ -8,8 +8,8 @@ module.exports = function (config) {
         frameworks: ['jasmine', 'browserify'],
 
         preprocessors: {
-            'app/**/*.js': ['browserify', 'coverage'],
-            'test/angular-mocks.js': ['browserify']
+            'src/app.js': ['browserify', 'coverage'],
+            'src/app.spec.js': ['browserify']
         },
 
         browsers: ['PhantomJS'],
@@ -28,8 +28,8 @@ module.exports = function (config) {
         },
 
         files: [
-            'test/angular-mocks.js',
-            'test/**/*.spec.js'
+            'src/app.spec.js',
+            'src/**/*.spec.js'
         ]
         
     });

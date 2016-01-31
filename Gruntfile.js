@@ -9,15 +9,15 @@ module.exports = function(grunt) {
                         ['uglifyify', { global: true }]
                     ]
                 },
-                src: 'app/index.js',
-                dest: 'dist/index.js'
+                src: 'src/app.js',
+                dest: 'dist/app.js'
             }
         },
 
         cssmin: {
             default: {
                 files: {
-                    'dist/index.css': [
+                    'dist/app.css': [
                         'node_modules/angular-material/angular-material.min.css'
                     ]
                 }
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         copy: {
             default: {
                 expand: true,
-                cwd: 'app/',
+                cwd: 'src/',
                 src: '**/*.html',
                 dest: 'dist/'
             }

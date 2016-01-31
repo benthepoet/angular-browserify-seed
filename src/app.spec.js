@@ -1,2 +1,2 @@
-require('../app');
+require('./app');
 require('angular-mocks');
