@@ -8,8 +8,8 @@ module.exports = function (config) {
         frameworks: ['jasmine', 'browserify'],
 
         preprocessors: {
-            'src/app.js': ['browserify', 'coverage'],
-            'src/app.spec.js': ['browserify']
+            'app/index.js': ['browserify', 'coverage'],
+            'app/index.spec.js': ['browserify']
         },
 
         browsers: ['PhantomJS'],
@@ -27,8 +27,11 @@ module.exports = function (config) {
             ]
         },
 
+        logLevel: config.LOG_DEBUG,
+
         files: [
-            'src/**/*.spec.js'
+            'app/index.spec.js',
+            'app/**/*.spec.js'
         ]
         
     });
