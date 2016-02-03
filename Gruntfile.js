@@ -6,7 +6,15 @@ module.exports = function(grunt) {
                 options: {
                     watch: true,
                     transform: [
-                        ['uglifyify', { global: true }]
+                        [
+                            'uglifyify', 
+                            { 
+                                compress: {
+                                    angular: true 
+                                }, 
+                                global: true 
+                            }
+                        ]
                     ]
                 },
                 src: 'app/index.js',

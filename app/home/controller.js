@@ -1,5 +1,4 @@
-HomeController.$inject = ['$window'];
-
+// @ngInject
 function HomeController($window) {
     var hc = this;
 

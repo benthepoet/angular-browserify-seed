@@ -22,12 +22,9 @@ module.exports = function (config) {
             debug: true,
             extensions: ['.js'],
             transform: [
-                ['uglifyify', { global: true }],
                 'browserify-istanbul'
             ]
         },
-
-        logLevel: config.LOG_DEBUG,
 
         files: [
             'app/index.spec.js',
