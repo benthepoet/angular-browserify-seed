@@ -19,9 +19,16 @@ module.exports = function (config) {
         autoWatch: false,
 
         browserify: {
-            debug: true,
             extensions: ['.js'],
             transform: [
+                [
+                    'uglifyify', 
+                    { 
+                        compress: {
+                            angular: true 
+                        }
+                    }
+                ],
                 'browserify-istanbul'
             ]
         },
