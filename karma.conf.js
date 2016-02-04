@@ -21,14 +21,6 @@ module.exports = function (config) {
         browserify: {
             extensions: ['.js'],
             transform: [
-                [
-                    'uglifyify', 
-                    { 
-                        compress: {
-                            angular: true 
-                        }
-                    }
-                ],
                 'browserify-istanbul'
             ]
         },
