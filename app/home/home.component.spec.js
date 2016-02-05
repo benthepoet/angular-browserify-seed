@@ -1,6 +1,6 @@
 describe('app.home.controller', function () {
 
-    var $window, controller;
+    var $window, element, scope;
 
     beforeEach(module('app'));
 

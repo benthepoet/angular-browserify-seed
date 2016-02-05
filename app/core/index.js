@@ -10,5 +10,4 @@ var dependencies = [
 
 module.exports =
     angular
-        .module('app.core', dependencies)
-        .name;
+        .module('app.core', dependencies);
