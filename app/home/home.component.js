@@ -1,8 +1,8 @@
 // @ngInject
 function HomeController($window) {
-    var hc = this;
+    var home = this;
 
-    hc.alert = alert;
+    home.alert = alert;
 
     function alert() {
         $window.alert('Hello World');

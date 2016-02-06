@@ -1,23 +1,25 @@
-describe('app.home.controller', function () {
+describe('app.home.home', function () {
 
-    var $window, element, scope;
+    var $window, home;
 
     beforeEach(module('app'));
 
-    beforeEach(inject(function (_$controller_, _$window_) {
+    beforeEach(inject(function (_$rootScope_, _$componentController_, _$window_) {
         $window = _$window_;
         spyOn($window, 'alert');
-        controller = _$controller_('HomeController', {});
+        home = _$componentController_('home', {
+            $scope: _$rootScope_.$new()
+        });
     }));
 
     it('should be created', function () {
-        expect(controller).toBeDefined();
+        expect(home).toBeDefined();
     });
 
     describe('alert', function () {
 
         it('should alert', function () {
-            controller.alert();
+            home.alert();
             expect($window.alert).toHaveBeenCalled();
         });
 
