@@ -6,5 +6,4 @@ module.exports =
     angular
         .module('app.home', dependencies)
         .config(require('./config'))
-        .controller('HomeController', require('./controller'))
-        .name;
+        .component('home', require('./component'));

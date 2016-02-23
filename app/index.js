@@ -1,8 +1,8 @@
 var angular = require('angular');
 
 var dependencies = [
-    require('./core'),
-    require('./home')
+    require('./core').name,
+    require('./home').name
 ];
 
 angular

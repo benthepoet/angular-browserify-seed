@@ -6,6 +6,7 @@ module.exports = function(grunt) {
                 options: {
                     watch: true,
                     transform: [
+                        'stringify',
                         [
                             'uglifyify', 
                             { 
