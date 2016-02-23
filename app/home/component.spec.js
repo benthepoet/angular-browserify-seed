@@ -7,6 +7,7 @@ describe('app.home.home', function () {
     beforeEach(inject(function (_$rootScope_, _$componentController_, _$window_) {
         $window = _$window_;
         spyOn($window, 'alert');
+        
         home = _$componentController_('home', {
             $scope: _$rootScope_.$new()
         });

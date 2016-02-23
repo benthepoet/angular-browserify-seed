@@ -12,5 +12,5 @@ function HomeController($window) {
 module.exports = {
     controller: HomeController,
     controllerAs: 'home',
-    template: require('./home.html')
+    template: require('./template.html')
 };

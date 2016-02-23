@@ -5,5 +5,5 @@ var dependencies = [];
 module.exports =
     angular
         .module('app.home', dependencies)
-        .config(require('./home.config'))
-        .component('home', require('./home.component'));
+        .config(require('./config'))
+        .component('home', require('./component'));
